@@ -355,6 +355,14 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -435,6 +443,9 @@ a {
     margin-top: 0;
     align-items: center;
   }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
 }
 
 .theme.col-1 {
@@ -487,6 +498,98 @@ a {
 
 .card {
   flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  .col-2 {
+    flex-basis: 16.66%;
+  }
+  .col-3 {
+    flex-basis: 24.99%;
+  }
+  .col-4 {
+    flex-basis: 33.32%;
+  }
+  .col-5 {
+    flex-basis: 41.65%;
+  }
+  .col-6 {
+    flex-basis: 49.98%;
+  }
+  .col-7 {
+    flex-basis: 58.31%;
+  }
+  .col-8 {
+    flex-basis: 66.64%;
+  }
+  .col-9 {
+    flex-basis: 74.97%;
+  }
+  .col-10 {
+    flex-basis: 83.3%;
+  }
+  .col-11 {
+    flex-basis: 91.63%;
+  }
+  .col-12 {
+    flex-basis: 99.96%;
+  }
+}
+.theme.col-1 {
+  background-color: #c17bc1;
+}
+
+.theme.col-2 {
+  background-color: #c17b93;
+}
+
+.theme.col-3 {
+  background-color: #c1927b;
+}
+
+.theme.col-4 {
+  background-color: #c1c17b;
+}
+
+.theme.col-5 {
+  background-color: #93c17b;
+}
+
+.theme.col-6 {
+  background-color: #7bc192;
+}
+
+.theme.col-7 {
+  background-color: #7bc1c1;
+}
+
+.theme.col-8 {
+  background-color: #7b93c1;
+}
+
+.theme.col-9 {
+  background-color: #927bc1;
+}
+
+.theme.col-10 {
+  background-color: #c17bc1;
+}
+
+.theme.col-11 {
+  background-color: #c17b93;
+}
+
+.theme.col-12 {
+  background-color: #c1927b;
 }
 
 .nav {
@@ -545,6 +648,13 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

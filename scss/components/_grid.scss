@@ -33,8 +33,15 @@
       justify-content: center;
       margin-top: 0;
       align-items: center;
+
+      & + [class^=col] {
+        margin-left: 10px;
+      }
+
     }
   }
+
+
   
   .theme.col-1 {
     background-color: #927bc1;
@@ -89,3 +96,25 @@
   }
   
   
+  @include mq($breakpoint) {
+
+    .centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+
+    @for $i from 1 through 12 {
+      .col-#{$i} {
+        flex-basis: $i * 8.33%;
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .theme.col-#{$i} {
+    background-color: adjust-hue(#927bc1, $i * 40)
+    }
+  }
